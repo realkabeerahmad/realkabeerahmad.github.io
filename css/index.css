@@ -193,9 +193,12 @@
 .col-2 h2 {
 	color: white;
 }
-.auto-input,
+
 ._name-text {
 	color: yellow;
+}
+.auto-input{
+	color: white;
 }
 .intro {
 	width: 100%;

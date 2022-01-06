@@ -1,0 +1,248 @@
+html {
+	scroll-behavior: smooth;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-y: hidden;
+}
+.sidebar {
+	height: 0;
+	width: 100%;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #000000;
+	backdrop-filter: blur(12px);
+	overflow-y: hidden;
+	transition: 0.5s;
+}
+
+.sidebar a {
+	padding: 8px;
+	margin: 10px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #818181;
+	display: inline-block;
+	transition: 0.3s;
+}
+
+.sidebar a:hover {
+	color: #fff;
+}
+.container {
+	height: 100vh;
+	width: 100vw;
+	overflow-y: hidden;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: url(./IMG/main_bg.jpg) center center/cover no-repeat;
+	z-index: -999;
+}
+::-webkit-scrollbar {
+	width: 5px;
+}
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+::-webkit-scrollbar-thumb {
+	background: #000000;
+	border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #000;
+}
+.menu-bar {
+	position: fixed;
+	width: 100%;
+	padding: 10px;
+	z-index: 1;
+	background-color: #000000;
+	box-shadow: 10px 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.dev-acc {
+	float: right;
+	margin: 5px;
+}
+.dev-acc ul li {
+	list-style: none;
+	display: inline-block;
+	margin: 5px;
+}
+.dev-acc li a {
+	text-decoration: none;
+	color: #fff;
+}
+.dev-acc li a img {
+	width: 20px;
+	filter: invert(1);
+}
+.menu-bar button {
+	float: left;
+	width: 50px;
+	font-size: 30px;
+	margin: 5px;
+	outline: none;
+	border: none;
+	color: white;
+	background-color: transparent;
+	border-radius: 5px;
+}
+.main-con {
+	height: calc(100vh);
+	width: calc(100vw);
+	overflow-y: scroll;
+	scroll-snap-type: y mandatory;
+	transition: margin-top 0.5s;
+}
+.main {
+	height: calc(100vh + 100px);
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	scroll-snap-align: start;
+}
+#contact {
+	height: calc(100vh - 100px) !important;
+}
+.info {
+	height: 70vh;
+	width: 90vw;
+	min-height: 200px;
+	min-width: 280px;
+	background-color: #ffffff20;
+	-webkit-backdrop-filter: blur(12px);
+	backdrop-filter: blur(12px);
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-size: 1.5rem;
+}
+.info-name {
+	/* text-align: center; */
+	flex: 0.5;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.info-name h1 {
+	margin: 20px;
+}
+.info-name h1 span {
+	/* color: rgb(184, 184, 184); */
+	color: rgb(100, 170, 255);
+}
+.info-img {
+	flex: 0.5;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.info-img .dev-image {
+	width: 250px;
+	height: 250px;
+	background-color: #fff;
+	margin: 20px;
+	border-radius: 100%;
+}
+.info-img .dev-image img {
+	width: 100%;
+	height: 100%;
+}
+/* .contact-info {
+	flex: 0.5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.contact-info a {
+	color: rgb(150, 171, 255);
+	text-decoration: none;
+}
+.contact-info a:hover {
+	color: rgb(100, 150, 255);
+	text-decoration: none;
+} */
+.contact-form {
+	/* flex: 0.5; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.contact-form h1 {
+	margin: 20px;
+}
+
+.contact-form form textarea,
+.contact-form form input {
+	margin: 10px;
+	padding: 10px;
+	width: 70vw;
+	max-width: 500px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	color: #ffffff;
+	background-color: #00000080;
+}
+.contact-form form button {
+	margin: 10px;
+	padding: 10px;
+	width: 70vw;
+	max-width: 500px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	color: #ffffff;
+	background-color: green;
+}
+.footer {
+	position: fixed;
+	color: #ffffff20;
+	bottom: 5px;
+}
+.contact-form form textarea {
+	margin: 10px;
+}
+@media screen and (max-width: 644px) {
+	.info {
+		flex-direction: column-reverse;
+	}
+	.info-img {
+		flex: 1;
+	}
+	.info-name {
+		flex: 1;
+	}
+}
+@media screen and (max-width: 450px) {
+	.info-img .dev-image {
+		width: 150px;
+		height: 150px;
+	}
+}
+@media screen and (max-height: 350px) {
+	.info-img .dev-image {
+		width: 125px;
+		height: 125px;
+	}
+}

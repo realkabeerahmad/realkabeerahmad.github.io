@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="index.css" />
+		<link rel="shortcut icon" href="./IMG/favicon.png" type="image/x-icon" />
+		<title>Kabeer Ahmad | Web Developer, Programmer and ML Enthusiast</title>
+	</head>
+	<body>
+		<div class="container" id="container"></div>
+		<div id="mySidebar" class="sidebar">
+			<div>
+				<a href="/">Home</a>
+				<a href="#about">About</a>
+				<a href="#skill">Skills</a>
+				<a href="#contact">Contact</a>
+				<a href="#">Resume</a>
+			</div>
+		</div>
+		<div class="main-con" id="_main">
+			<div class="menu-bar">
+				<button class="" id="open" onclick="openNav()">≡</button>
+				<button class="" id="close" onclick="closeNav()" style="display: none">
+					×
+				</button>
+				<div class="dev-acc">
+					<ul>
+						<li>
+							<a
+								href="https://github.com/realkabeerahmad/realkabeerahmad"
+								target="_blank"
+								><img src="./IMG/github-logo.png" alt="" />
+							</a>
+						</li>
+
+						<li>
+							<a
+								href="https://www.linkedin.com/in/realkabeerahmad/"
+								target="_blank"
+								><img src="./IMG/linkedin-letters.png" alt="" />
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="main" id="/">
+				<section class="info">
+					<div class="info-name">
+						<h1>
+							Hi,<br />
+							I'am <span>Kabeer Ahmad</span>. <br />
+							Web Developer
+						</h1>
+					</div>
+					<div class="info-img">
+						<div class="dev-image">
+							<img src="./IMG/dev.png" alt="" />
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="main" id="about">
+				<section class="info" id="about">About Section</section>
+			</div>
+			<div class="main" id="skill">
+				<section class="info">Skills</section>
+			</div>
+			<div class="main" id="contact">
+				<section class="info">
+					<div class="contact-form">
+						<h1>Contact Now!!!</h1>
+						<form onsubmit="false;">
+							<div>
+								<input
+									type="text"
+									name="name"
+									id="_name"
+									placeholder="Please Enter your Name"
+								/>
+							</div>
+							<div>
+								<input
+									type="email"
+									name="email"
+									id="_email"
+									placeholder="Enter Your Email"
+								/>
+							</div>
+							<div>
+								<textarea
+									name=""
+									id=""
+									cols="23"
+									rows="5"
+									placeholder="Enter Your Message Here!!!"
+								></textarea>
+							</div>
+							<button onclick="false;">Send Message</button>
+						</form>
+					</div>
+				</section>
+				<div class="footer">&copy; Copyright 2022 | Kabeer Ahmad</div>
+			</div>
+		</div>
+	</body>
+	<script src="index.js"></script>
+</html>

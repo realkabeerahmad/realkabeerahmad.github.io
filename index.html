@@ -1,109 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="index.css" />
-		<link rel="shortcut icon" href="./IMG/favicon.png" type="image/x-icon" />
-		<title>Kabeer Ahmad | Web Developer, Programmer and ML Enthusiast</title>
-	</head>
-	<body>
-		<div class="container" id="container"></div>
-		<div id="mySidebar" class="sidebar">
-			<div>
-				<a href="/">Home</a>
-				<a href="#about">About</a>
-				<a href="#skill">Skills</a>
-				<a href="#contact">Contact</a>
-				<a href="#">Resume</a>
-			</div>
-		</div>
-		<div class="main-con" id="_main">
-			<div class="menu-bar">
-				<button class="" id="open" onclick="openNav()">≡</button>
-				<button class="" id="close" onclick="closeNav()" style="display: none">
-					×
-				</button>
-				<div class="dev-acc">
-					<ul>
-						<li>
-							<a
-								href="https://github.com/realkabeerahmad/realkabeerahmad"
-								target="_blank"
-								><img src="./IMG/github-logo.png" alt="" />
-							</a>
-						</li>
-
-						<li>
-							<a
-								href="https://www.linkedin.com/in/realkabeerahmad/"
-								target="_blank"
-								><img src="./IMG/linkedin-letters.png" alt="" />
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="main" id="/">
-				<section class="info">
-					<div class="info-name">
-						<h1>
-							Hi,<br />
-							I'am <span>Kabeer Ahmad</span>. <br />
-							Web Developer
-						</h1>
-					</div>
-					<div class="info-img">
-						<div class="dev-image">
-							<img src="./IMG/dev.png" alt="" />
-						</div>
-					</div>
-				</section>
-			</div>
-			<div class="main" id="about">
-				<section class="info" id="about">About Section</section>
-			</div>
-			<div class="main" id="skill">
-				<section class="info">Skills</section>
-			</div>
-			<div class="main" id="contact">
-				<section class="info">
-					<div class="contact-form">
-						<h1>Contact Now!!!</h1>
-						<form onsubmit="false;">
-							<div>
-								<input
-									type="text"
-									name="name"
-									id="_name"
-									placeholder="Please Enter your Name"
-								/>
-							</div>
-							<div>
-								<input
-									type="email"
-									name="email"
-									id="_email"
-									placeholder="Enter Your Email"
-								/>
-							</div>
-							<div>
-								<textarea
-									name=""
-									id=""
-									cols="23"
-									rows="5"
-									placeholder="Enter Your Message Here!!!"
-								></textarea>
-							</div>
-							<button onclick="false;">Send Message</button>
-						</form>
-					</div>
-				</section>
-				<div class="footer">&copy; Copyright 2022 | Kabeer Ahmad</div>
-			</div>
-		</div>
-	</body>
-	<script src="index.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Dracula Club House</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#index" class="navlink active">Home</a></li>
+        <li><a href="#goal" class="navlink">Goals</a></li>
+        <!-- <li><a href="#details">Unloackable</a></li>
+        <li><a href="#redeem">Redeem</a></li> -->
+        <li><a href="#about" class="navlink">About Me</a></li>
+      </ul>
+    </nav>
+    <section id="index">
+      <div class="container">
+        <h1>Dracula Clubhouse NFT</h1>
+        <p>
+          Dracula Clubhouse is the collection of 9408 unique programatically
+          generated cool Dracula on
+          <a href="https://opensea.io"><strong>OpenSea</strong></a
+          >. Every item is unique from other and some Items are entirly epic.
+          All the items are on Etherium Blockchain. The one who owns atleast our
+          one Item will have our Memberships also.
+        </p>
+        <br /><br />
+        <p>
+          Just Click the button below and visit my collection Now and bocome one
+          of the members!!!
+        </p>
+        <a
+          class="btn"
+          href="https://opensea.io/collection/dracula-clubhouse"
+          target="_blank"
+          >Dracula Clubhouse</a
+        >
+        <a href="#goal">
+          <div class="sd">
+            <span>Scroll</span>
+            <span>↓</span>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section id="goal">
+      <div class="container reveal">
+        <h1>GOALS After Successfull Memberships</h1>
+        <p>
+          After ever % of Successfull Membership I have setup some of my goals
+          which are as follow
+        </p>
+        <ul>
+          <li>
+            <span class="red">10% </span> I will payback all my loans and
+            Dracula Clubhouse will have its own domain
+          </li>
+          <li>
+            <span class="red">20% </span> Collection will have a cool Logo and a
+            youtube channel
+          </li>
+          <li>
+            <span class="red">40% </span> I will Launch a Dracula Game where
+            members will be able to enjoy purchase benifits
+          </li>
+          <li>
+            <span class="red">80% </span> All Members will be invited to the
+            Meta Party.
+          </li>
+          <li><span class="red">100% </span> To be decided....</li>
+        </ul>
+      </div>
+    </section>
+    <section id="about">
+      <div class="container reveal">
+        <h1>My name is Kabeer Ahmad</h1>
+        <img
+          src="https://lh3.googleusercontent.com/butKld3irBXoBUF1FhP065WOA6uPTaTLqcpvLo1XcbVoSJtu1eAfLECpmQioF1p0FAxjjo9FkXDyQeFRnjb1SRV3ZRxve9_dKHFY=s0"
+          alt="not me actualy"
+        />
+        <p>
+          I am Student of computer science and yes I can not hack your facebook.
+          what I can do is create websites, designs and digital art. I took in
+          so much money and spent it on studies but now is my time to do
+          something to know more about me
+          <a href="https://web.facebook.com/realkabeerahmad">
+            <strong> Click Here </strong>
+          </a>
+        </p>
+      </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
 </html>
